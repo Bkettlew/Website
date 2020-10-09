@@ -46,14 +46,22 @@ html{
 }
 .ppics{
     display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 5px;
+}
+.box{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.ppics > img{
+.box > img{
     object-fit: cover;
-    width: 1%;
-    height: 1%;
-   
+    width: 80%;
+}
+.typetext{
+    font-family: 'Type';
+    font-size: 22px;
 }
 .signature{
     font-size: 45px;
