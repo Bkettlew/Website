@@ -1,5 +1,36 @@
+@font-face {font-family: 'Billie'; src: url('/Fonts/Billie Ashley.otf');}
+@font-face {font-family: 'Mavis'; src: url('/Fonts/Mavis Bold.ttf');}
+@font-face {font-family: 'Red Rose'; src: url('/Fonts/RedRose-Bold.ttf');}
+@font-face {font-family: 'Surefer Bay'; src: url('/Fonts/Surfer Bay.otf');}
+@font-face {font-family: 'Type'; src: url('/Fonts/typewcond_regular.otf');}
+@font-face {font-family: 'DK'; src: url('/Fonts/DK Business As Usual.ttf');}
+
 html{
     color: 000000;
+}
+.main-nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    padding: 15px;
+    
+}
+
+.main-nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0rem .6rem .1rem .6rem;
+    font-family: 'DK';
+    font-size: 55px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    background: #5e5c5c;
+    color: #ffffff;
 }
 .back{
     background: url(/Images/Female\ Surfer.jpg);
@@ -7,4 +38,25 @@ html{
     background-size: cover;
     background-position: center;
     margin: 5px;
+}
+.pandp{
+    font-size: 35px;
+    font-family: 'Mavis';
+    text-align: center;
+}
+.ppics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ppics > img{
+    object-fit: cover;
+    width: 1%;
+    height: 1%;
+   
+}
+.signature{
+    font-size: 45px;
+    font-family: 'Billie';
+    text-align: center;
 }
